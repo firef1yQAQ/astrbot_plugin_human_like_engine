@@ -1,0 +1,9 @@
+name: astrbot_plugin_human_like_engine
+display_name: 拟人化逐句发送
+desc: 按标点把长回复切成几句逐条发送，带打字停顿、正在输入状态与插话加速。
+short_desc: 按标点把长回复切成几句逐条发送，带打字停顿、正在输入状态与插
+help: 长回复自动分句发送；短回复整条发；插话不会吞句子。
+version: 0.2.0
+author: dsh
+repo: ""
+astrbot_version: ">=4.0.0"
