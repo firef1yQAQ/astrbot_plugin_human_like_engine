@@ -1,0 +1,57 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "启用逐句发送",
+    "default": true
+  },
+  "split_over_sentences": {
+    "type": "int",
+    "description": "超过几句才拆分（2=两句以内整条发）",
+    "default": 2
+  },
+  "long_sentence_threshold": {
+    "type": "int",
+    "description": "单句超过多少字才在逗号处补切",
+    "default": 20
+  },
+  "merge_min_chars": {
+    "type": "int",
+    "description": "短于多少字的碎片并入下一句",
+    "default": 6
+  },
+  "strip_period": {
+    "type": "bool",
+    "description": "去掉句末的“。”",
+    "default": true
+  },
+  "read_delay": {
+    "type": "float",
+    "description": "开口前的阅读缓冲（秒）",
+    "default": 0.8
+  },
+  "gap_min": {
+    "type": "float",
+    "description": "句间停顿下限（秒）",
+    "default": 1.5
+  },
+  "gap_max": {
+    "type": "float",
+    "description": "句间停顿上限（秒）",
+    "default": 3.0
+  },
+  "gap_per_char": {
+    "type": "float",
+    "description": "下一句每字追加的停顿（秒）",
+    "default": 0.1
+  },
+  "interrupt_speedup": {
+    "type": "float",
+    "description": "被插话后剩余句子的加速倍率",
+    "default": 0.3
+  },
+  "idle_timeout": {
+    "type": "int",
+    "description": "空闲多久回收 worker（秒）",
+    "default": 120
+  }
+}
